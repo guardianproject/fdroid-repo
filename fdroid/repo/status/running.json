@@ -1,13 +1,11 @@
 {
   "/etc/issue.net": "Debian GNU/Linux 10",
   "commandLine": [
-    "/home/geheimnis/code/fdroid/fdroidserver/fdroid update",
-    "--verbose",
-    "--delete-unknown",
-    "--nosign"
+    "/home/geheimnis/code/fdroid/fdroidserver/fdroid signindex",
+    "-v"
   ],
   "fdroiddata": {
-    "commitId": "d01aa50c317274349181d20c01c55a6dbfa83ba9",
+    "commitId": "bcbafa25eaf30aaddfea561ac28d403f497f1561",
     "isDirty": true,
     "modifiedFiles": [
       "config.yml",
@@ -25,6 +23,7 @@
       "builder/.vagrant/rgloader/loader.rb",
       "builder/Vagrantfile",
       "builder/sshconfig",
+      "git-mirror-13GB/",
       "org.torproject.torservices_1.apk",
       "org.torproject.torservices_1.apk.asc",
       "pre-deploy.py"
@@ -36,6 +35,6 @@
     "modifiedFiles": [],
     "untrackedFiles": []
   },
-  "startTimestamp": 1629722166000,
-  "subcommand": "update"
+  "startTimestamp": 1629808791000,
+  "subcommand": "signindex"
 }
