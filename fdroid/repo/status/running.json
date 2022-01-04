@@ -1,10 +1,8 @@
 {
   "/etc/issue.net": "Debian GNU/Linux 10",
   "commandLine": [
-    "/home/geheimnis/code/fdroid/fdroidserver/fdroid update",
-    "--verbose",
-    "--delete-unknown",
-    "--nosign"
+    "/home/geheimnis/code/fdroid/fdroidserver/fdroid signindex",
+    "-v"
   ],
   "fdroiddata": {
     "commitId": "bcbafa25eaf30aaddfea561ac28d403f497f1561",
@@ -37,6 +35,6 @@
     "modifiedFiles": [],
     "untrackedFiles": []
   },
-  "startTimestamp": 1636126667000,
-  "subcommand": "update"
+  "startTimestamp": 1639814885000,
+  "subcommand": "signindex"
 }
