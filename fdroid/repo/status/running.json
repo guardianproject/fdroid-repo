@@ -5,7 +5,7 @@
     "-v"
   ],
   "fdroiddata": {
-    "commitId": "bcbafa25eaf30aaddfea561ac28d403f497f1561",
+    "commitId": "20d785fb94d3db428b127630f706ca308cf251bf",
     "isDirty": true,
     "modifiedFiles": [
       "config.yml",
@@ -35,6 +35,6 @@
     "modifiedFiles": [],
     "untrackedFiles": []
   },
-  "startTimestamp": 1644134231000,
+  "startTimestamp": 1645197712000,
   "subcommand": "signindex"
 }
