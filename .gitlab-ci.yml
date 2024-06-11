@@ -1,0 +1,10 @@
+GitLab Artifacts:
+  artifacts:
+    paths:
+    - public
+  script:
+  - mkdir .public
+  - cp -r * .public/
+  - mv .public public
+  variables:
+    GIT_DEPTH: 1
