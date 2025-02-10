@@ -4,66 +4,128 @@
   <head>
     <title>Guardian Project Official App Repository</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-      <link rel='stylesheet' id='admin-bar-css' href='/fdroid/admin-bar.min.css?ver=3.7.1' type='text/css' media='all' />
-      <link rel='stylesheet' id='responsive-style-css' href='/fdroid/style.css?ver=1.9.3.4' type='text/css' media='all' />
-      <link rel='stylesheet' id='responsive-media-queries-css' href='/fdroid/core-css-style.css?ver=1.9.3.4' type='text/css' media='all' />
+      <link rel='stylesheet' id='responsive-media-queries-css' href='index.css?ver=1.9.3.4' type='text/css' media='all' />
   </head>
-    
+
     <body>
       <div id="logo">
-        <a href="https://guardianproject.info/"><img src="/fdroid/cropped-GP_logo+txt_hires_black_on_trans_header.png" width="950" height="120" alt="The Guardian Project"/></a>
+        <a href="https://guardianproject.info/"><img src="index.png" width="950" height="120" alt="The Guardian Project"/></a>
       </div><!-- end of #logo -->
-      
-      
+
+
       <div id="container" class="hfeed">
         <div id="wrapper" class="clearfix">
           <div id="widgets" class="home-widgets">
             <div class="widget-wrapper widget_text">
-              <div class="widget-title-home"><h2>Guardian Project Official App Repository</h2></div>
+              <div class="widget-title-home"><h1>Guardian Project Official App Repository</h1></div>
               <div class="textwidget">
                 This is our <a href="https://f-droid.org"
-                  target="_blank">F-Droid</a> app repository for the official,
-                  trusted builds of our apps.  There are three ways to access
-                  this repo, via an HTTPS connection to our main site, via a
-                  Tor Hidden Service, or via an Amazon AWS S3 &quot;Bucket&quot;:
+                  target="_blank">F-Droid</a> app repository for the
+                  official, trusted builds of our apps.  There are
+                  multiple ways to access this repo, to help get
+                  around filtering and blocking.  The HTTPS connection
+                  to our main site is the canonical version.  The
+                  others are "mirrors" of the same content.  Try
+                  adding as many as you'd like until your device can
+                  connect.
               </div>
 
               <div>
-                <div class="textwidget" style="width:50%; float:left">
+                <div class="textwidget" style="width:100%">
                   <center>
-                  <h2>Direct HTTPS</h2>
-                  <a href="https://guardianproject.info/fdroid/repo?fingerprint=B7C2EEFD8DAC7806AF67DFCD92EB18126BC08312A7F2D6F3862E46013C7A6135">
-                    https://guardianproject.info/fdroid/repo<br/>
-                    <img src="/fdroid/guardianproject.info-QR.png"
-                      width="245" height="245" alt="guardianproject.info" />
-                  </a>
+                    <h3>Official Repo</h3>
+                    <a href="https://guardianproject.info/fdroid/repo?fingerprint=B7C2EEFD8DAC7806AF67DFCD92EB18126BC08312A7F2D6F3862E46013C7A6135">
+                      https://guardianproject.info/fdroid/repo<br/>
+                      <img src="/fdroid/guardianproject.info_fdroid_repo-QR.png"
+			   width="245" height="245" alt="guardianproject.info" />
+                    </a>
                   </center>
                 </div>
-                <div class="textwidget" style="width:50%; float:right">
-                  <center>
-                  <h2>Tor Hidden Service</h2>
-                  <a href="http://bdf2wcxujkg6qqff.onion/fdroid/repo?fingerprint=B7C2EEFD8DAC7806AF67DFCD92EB18126BC08312A7F2D6F3862E46013C7A6135">
-                    http://bdf2wcxujkg6qqff.onion/fdroid/repo<br />
-                    <img src="/fdroid/bdf2wcxujkg6qqff.onion-QR.png"
-                      width="245" height="245" alt="bdf2wcxujkg6qqff.onion"/>
-                  </a>
-                  </center>
-                </div>
-              </div>
 
-              <br style="clear:both;"/>
+                <br style="clear:both;"/>
+
+                <h1>Mirrors</h1>
+
+              <div class="textwidget" style="width:50%; float:left">
+		<center>
+		  <h3>gitlab.com raw</h3>
+		  <div class="textwidget">
+                    <a href="https://gitlab.com/guardianproject/fdroid-repo/-/raw/master/fdroid/repo?fingerprint=B7C2EEFD8DAC7806AF67DFCD92EB18126BC08312A7F2D6F3862E46013C7A6135">
+                      https://gitlab.com/guardianproject/fdroid-repo/-/raw/master/fdroid/repo<br />
+                      <img src="/fdroid/gitlab.com_guardianproject_fdroid-repo_-_raw_master_fdroid_repo-QR.png"
+			   width="285" height="285"
+			   alt="gitlab.com/guardianproject/fdroid-repo/-/raw" />
+                    </a>
+		  </div>
+		</center>
 
               <center>
-              <h2>Amazon AWS S3 Bucket</h2>
+              <h3>gitlab.com pages</h3>
+              <div class="textwidget">
+                <a href="https://guardianproject.gitlab.io/fdroid-repo/fdroid/repo?fingerprint=B7C2EEFD8DAC7806AF67DFCD92EB18126BC08312A7F2D6F3862E46013C7A6135">
+		  https://guardianproject.gitlab.io/fdroid-repo/fdroid/repo<br />
+                  <img src="/fdroid/guardianproject.gitlab.io_fdroid-repo_fdroid_repo-QR.png"
+                      width="285" height="285"
+                      alt="guardianproject.gitlab.io/fdroid-repo" />
+                </a>
+              </div>
+              </center>
+              </div>
+
+              <div class="textwidget" style="width:50%; float:left">
+              <center>
+              <h3>Amazon AWS S3</h3>
               <div class="textwidget">
                 <a href="https://s3.amazonaws.com/guardianproject/fdroid/repo?fingerprint=B7C2EEFD8DAC7806AF67DFCD92EB18126BC08312A7F2D6F3862E46013C7A6135">
                   https://s3.amazonaws.com/guardianproject/fdroid/repo<br />
-                  <img src="/fdroid/s3-guardianproject-QR.png"
+                  <img src="/fdroid/s3.amazonaws.com_guardianproject_fdroid_repo-QR.png"
                       width="285" height="285"
                       alt="s3.amazonaws.com/guardianproject" />
                 </a>
               </div>
               </center>
+
+              <center>
+              <h3>GitHub Raw</h3>
+              <div class="textwidget">
+                <a href="https://raw.githubusercontent.com/guardianproject/fdroid-repo/master/fdroid/repo?fingerprint=B7C2EEFD8DAC7806AF67DFCD92EB18126BC08312A7F2D6F3862E46013C7A6135">
+		  https://raw.githubusercontent.com/guardianproject/fdroid-repo/master/fdroid/repo<br />
+                  <img src="/fdroid/raw.githubusercontent.com_guardianproject_fdroid-repo_master_fdroid_repo-QR.png"
+                      width="285" height="285"
+                      alt="raw.githubusercontent.com/guardianproject" />
+                </a>
+              </div>
+              </center>
+              </div>
+
+<!--
+                <div class="textwidget" style="width:50%; float:right">
+                  <center>
+                    <h3>Tor Hidden Service</h3>
+                    <a href="http://uzfomcxbx24d3esy7akpdbiovcfoorupz4aez6fpabmyh45nnqdp7mqd.onion/fdroid/repo?fingerprint=B7C2EEFD8DAC7806AF67DFCD92EB18126BC08312A7F2D6F3862E46013C7A6135">
+                      http://uzfomcxbx24d3esy7akpdbiovcfoorupz4aez6fpabmyh45nnqdp7mqd.onion/fdroid/repo<br />
+                      <img src="/fdroid/uzfomcxbx24d3esy7akpdbiovcfoorupz4aez6fpabmyh45nnqdp7mqd.onion_fdroid_repo-QR.png"
+			   width="245" height="245" alt="uzfomcxbx24d3esy7akpdbiovcfoorupz4aez6fpabmyh45nnqdp7mqd.onion"/>
+                    </a>
+                  </center>
+                </div>
+
+              <br style="clear:both;"/>
+
+              <center>
+              <h3>RawGit/Cloudflare</h3>
+              <div class="textwidget">
+                <a href="https://ghcdn.rawgit.org/guardianproject/fdroid-repo/master/fdroid/repo?fingerprint=B7C2EEFD8DAC7806AF67DFCD92EB18126BC08312A7F2D6F3862E46013C7A6135">
+		  https://ghcdn.rawgit.org/guardianproject/fdroid-repo/master/fdroid/repo<br />
+                  <img src="/fdroid/ghcdn.rawgit.org_guardianproject_fdroid-repo_master_fdroid_repo-QR.png"
+                      width="285" height="285"
+                      alt="ghcdn.rawgit.org/guardianproject" />
+                </a>
+              </div>
+              </center>
+
+-->
+              </div>
 
               <h2>Signing Key Fingerprint</h2>
               <div class="textwidget">
@@ -71,7 +133,7 @@
                 of the repository signing key, here it is:
                 <pre>B7&nbsp;C2&nbsp;EE&nbsp;FD&nbsp;8D&nbsp;AC&nbsp;78&nbsp;06&nbsp;AF&nbsp;67&nbsp;DF&nbsp;CD&nbsp;92&nbsp;EB&nbsp;18&nbsp;12&nbsp;6B&nbsp;C0&nbsp;83&nbsp;12&nbsp;A7&nbsp;F2&nbsp;D6&nbsp;F3&nbsp;86&nbsp;2E&nbsp;46&nbsp;01&nbsp;3C&nbsp;7A&nbsp;61&nbsp;35</pre>
               </div>
-              
+
               <h2>Questions or Problems?</h2>
               <div class="textwidget">
                 If you have any questions or problems please email us
@@ -84,8 +146,8 @@
           </div>
         </div>
       </div>
-      
+
       <hr />
-      
+
     </body>
 </html>
